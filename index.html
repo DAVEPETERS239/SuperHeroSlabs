@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Comic Shop</title>
+</head>
+<body>
+  <h1>Welcome to My Comic Book Shop</h1>
+
+  <div style="border:1px solid #ccc; padding:10px; width:300px;">
+    <h2>X-Men #1 (1991)</h2>
+    <img src="images/xmen1.jpg" alt="X-Men 1" style="width:100%;">
+    <p>Condition: Near Mint</p>
+    <p>Price: $12.00</p>
+
+    <!-- PayPal Buy Now Button -->
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="YOURPAYPAL@EMAIL.COM">
+      <input type="hidden" name="item_name" value="X-Men #1 (1991)">
+      <input type="hidden" name="amount" value="12.00">
+      <input type="hidden" name="currency_code" value="USD">
+      <input type="submit" value="Buy Now with PayPal">
+    </form>
+  </div>
+
+</body>
+</html>
